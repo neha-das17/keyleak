@@ -1,0 +1,44 @@
+# Compiled binaries
+vulnerable/server
+*.o
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated key/ciphertext/output files
+*.key
+*.pem
+*.secret
+
+# Runtime evidence that may contain real AES keys
+evidence/*_output.txt
+evidence/gdb/*.txt
+
+# OS/editor files
+.DS_Store
+*.swp
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Compiled C binaries
+vulnerable/server
+*.o
+
+# Editor files
+*.swp
+.DS_Store
+
+# Sensitive key files
+*.key
+*.pem
+*.secret
+
+# Runtime evidence that may contain real keys
+evidence/*_output.txt
+evidence/gdb/*.txt
