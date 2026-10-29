@@ -42,3 +42,15 @@ vulnerable/server
 # Runtime evidence that may contain real keys
 evidence/*_output.txt
 evidence/gdb/*.txt
+# KeyLeak generated session data
+m4/session.json
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Local virtual environment
+.venv/
+
+# Compiled binaries
+vulnerable/server
