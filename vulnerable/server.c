@@ -450,34 +450,15 @@ int main(void)
      *
      * This is an out-of-bounds read / information leak.
      */
-    printf("[M3] Leaked region (96 bytes): ");
+/*
+ * M3: Display the inspected region in hexadecimal.
+ */
+printf("[M3] Leaked region (%d bytes) in hexadecimal:\n",
+       BUFFER_SIZE + KEY_SIZE);
 
-    fflush(stdout);
-
-    ssize_t leaked =
-        write(STDOUT_FILENO,
-              frame.input,
-              BUFFER_SIZE + KEY_SIZE);
-
-
-    if (leaked < 0)
-    {
-        perror("[M3] write");
-        return EXIT_FAILURE;
-    }
-
-
-    printf("\n");
-
-
-    /*
-     * Print the leaked region separately in hexadecimal.
-     *
-     * This makes verification easier during the lab.
-     */
-    print_hex("[M3] Leak in hex: ",
-              (unsigned char *)frame.input,
-              BUFFER_SIZE + KEY_SIZE);
+print_hex("[M3] Leak in hex: ",
+          (unsigned char *)frame.input,
+          BUFFER_SIZE + KEY_SIZE);
 
 
     /*

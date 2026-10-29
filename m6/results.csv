@@ -1,0 +1,4 @@
+Test ID,Payload Length,Vulnerable AES,Vulnerable Key Recovered,Vulnerable Key Matches,Patched AES,Patched Key Disclosure,Patched Oversized Rejected,Patched Cleanup Invoked,Result
+T1,64,True,True,True,True,False,False,True,PASS
+T2,65,True,True,True,True,False,True,True,PASS
+T3,128,True,True,True,True,False,True,True,PASS

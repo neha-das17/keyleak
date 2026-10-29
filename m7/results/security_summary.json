@@ -1,0 +1,8 @@
+{
+  "tests": 3,
+  "passed": 3,
+  "pass_rate_percent": 100.0,
+  "vulnerable_key_match_tests": 3,
+  "patched_known_disclosure_label_tests": 0,
+  "patched_aes_pass_tests": 3
+}

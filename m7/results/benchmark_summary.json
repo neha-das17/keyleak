@@ -1,0 +1,19 @@
+{
+  "vulnerable": {
+    "runs": 100,
+    "mean_ms": 5.94691431,
+    "median_ms": 4.977095,
+    "stddev_ms": 2.091617629961512,
+    "min_ms": 4.234522,
+    "max_ms": 16.610136
+  },
+  "patched": {
+    "runs": 100,
+    "mean_ms": 5.70930986,
+    "median_ms": 5.047219,
+    "stddev_ms": 1.5453723797540146,
+    "min_ms": 4.238019,
+    "max_ms": 11.593714
+  },
+  "median_overhead_percent": 1.4089343281572855
+}

@@ -1,0 +1,36 @@
+========================================
+       KeyLeak - M1/M2/M3 App
+========================================
+
+[M1] AES-256-GCM key generated successfully.
+[M1] Key size: 32 bytes (256 bits)
+[M1] Original key: 257090500ad791161707fdf4cae7c63990cd373b7aa62f5b06a5c5a83daaf0fc
+[M1] IV: 1cbc9702f2064597917a8ff3
+[M1] Ciphertext: 41b7edf4a637c024246a2c21e64197de2da2c035a430f18ccb459d56
+[M1] Authentication tag: 8a8e422eddaaed90b1ece0bb73b88ef8
+[M1] Decrypted plaintext: Confidential KeyLeak message
+[M1] AES-256-GCM test: PASS
+
+========================================
+       M2 - Stack Reconnaissance
+========================================
+[M2] key   address: 0x7ffca95be620
+[M2] input address: 0x7ffca95be580
+[M2] frame address: 0x7ffca95be580
+[M2] input size: 64 bytes
+[M2] key size: 32 bytes
+
+========================================
+       M3 - Information Disclosure
+========================================
+[M3] Enter up to 64 bytes of test data: 
+[M3] Received 64 bytes.
+[M3] Leaked region (96 bytes): AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%pêP
+◊ë˝Ù Á∆9êÕ7;z¶/[•≈®=™¸
+[M3] Leak in hex: 41414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141257090500ad791161707fdf4cae7c63990cd373b7aa62f5b06a5c5a83daaf0fc
+[M3] Key disclosure verification: PASS
+[M3] The leaked 32-byte region matches the AES key.
+
+========================================
+       KeyLeak M1/M2/M3 Complete
+========================================

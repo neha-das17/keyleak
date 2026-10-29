@@ -42,6 +42,7 @@ vulnerable/server
 # Runtime evidence that may contain real keys
 evidence/*_output.txt
 evidence/gdb/*.txt
+<<<<<<< HEAD
 # KeyLeak generated session data
 m4/session.json
 
@@ -54,3 +55,31 @@ __pycache__/
 
 # Compiled binaries
 vulnerable/server
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Compiled C executables
+vulnerable/server
+patched/server_patched
+m7/zeroization_test
+
+# Sensitive key material
+m4/session.json
+
+# Temporary files
+*.log
+*.tmp
+core
+core.*
+
+# Editor files
+.vscode/
+.idea/
+>>>>>>> 61802f0 (Complete KeyLeak M1-M7 implementation and security evaluation)
